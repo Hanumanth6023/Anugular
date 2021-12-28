@@ -5,7 +5,6 @@ import { LogService } from './log.service';
   providedIn: 'root'
 })
 export class DataService {
-
   message:any[]=[];
  
   constructor(private log:LogService) { }
