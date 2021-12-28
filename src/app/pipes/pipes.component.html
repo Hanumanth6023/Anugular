@@ -1,0 +1,43 @@
+<h2>Built-in pipes</h2>
+
+<p>  {{name}}</p>
+<p>  {{name  | uppercase}}</p>
+<p>  {{name  | lowercase}}</p>
+<p>  {{name  | slice :0:4}}</p>
+<p>  {{name  | uppercase | slice : 0:4}}</p>
+<hr>
+<p>Date</p>
+<p>{{DOB | date}}</p>
+<p>{{DOB | date:"fullDate"}}</p>
+<p>{{DOB | date : "dd/mm/yyyy"}}</p>
+<p>{{DOB | date : "MMMM/dd/yyyy"}}</p>
+<p>{{DOB | date : "dd/mm/yyyy hh:mm:ss"}}</p>
+<p>{{DOB | date : "dd/mm/yyyy" | date : "fullDate"}}</p>
+<p>{{DOB | date : "medium"}}</p>
+<p>{{DOB | date : "short"}}</p>
+<p>{{DOB | date : "shortTime"}}</p>
+<p>{{DOB | date : "EEEE/MM/dd/yyyy"}}</p>
+<hr>
+
+<p>{{amount}}</p>
+<p>Amount {{amount | currency }}</p>
+<p>Amount {{amount | currency :'USD'}}</p>
+<p>Amount {{amount | currency  :'IND'}}</p>
+<p>Amount {{amount | currency : 'JPY'}}</p>
+<p>Amount {{amount | currency : 'EUR' }}</p>
+<p>Amount {{amount | currency : 'BR'}}</p>
+<hr>
+
+<p>custome pipe</p>
+<p>Square --- {{5| square}}</p>
+<p>Square --- {{2| square}}</p>
+
+<p>cube --- {{2| cube :10}}</p>
+<p>cube --- {{3| cube }}</p>
+<hr>
+
+<p>power values</p>
+<p>{{2 | power : 3}}</p>
+<p>{{3 | power : 2}}</p>
+<p>{{4 | power : 3}}</p>
+<p>{{5 | power : 2}}</p>
